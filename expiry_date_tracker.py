@@ -46,7 +46,7 @@ def add_item(data):
             "expiry": exp
         })
         save_data(data)
-        print("✔ Item added successfully!")
+        print(" Item added successfully!")
     except:
         print(" Invalid date format!")
 
@@ -88,7 +88,7 @@ def expiring_soon(data):
 
     for item in data:
         if today <= item["expiry"] <= soon_limit:
-            print(f"⚠️ {item['name']} expiring on {item['expiry']}")
+            print(f" {item['name']} expiring on {item['expiry']}")
             found = True
 
     if not found:
@@ -124,3 +124,4 @@ def main():
             print("Invalid option!")
 
 main()
+
