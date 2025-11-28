@@ -1,4 +1,5 @@
 10 Days Hands-on Python Programming – Workshop
+
 This repository contains all the projects I completed during the 10-day Hands-on Python Programming Workshop at my college.
 Each day we learned something new and created a small project based on that topic.
 This helped me understand Python in a more practical way.
