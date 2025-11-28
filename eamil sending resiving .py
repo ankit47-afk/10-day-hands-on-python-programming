@@ -2,7 +2,7 @@
 import smtplib # this lib is used to send and reciving emails 
 import ssl # ssl is used to make secure circuit 
 from email.message import EmailMessage # means 
-EMAIL = "m"
+EMAIL = ""
 APP_PASSWORD = ""
 RECEIVER = ""
 msg = EmailMessage()
@@ -14,4 +14,5 @@ context =ssl.create_default_context()
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(EMAIL, APP_PASSWORD)
     server.send_message(msg)
+
     
